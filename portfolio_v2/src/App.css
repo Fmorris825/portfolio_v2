@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow&display=swap");
+
+.App {
+  font-family: "Permanent Marker", sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+h2 {
+  font-size: 5vw;
+}
+
+a {
+  color: black;
+  font-size: 1.5vw;
+}
+
+.name {
+  position: absolute;
+  top: 35vw;
+  left: 10vw;
+}
+.subTitle {
+  position: absolute;
+  top: 45vw;
+  left: 10vw;
+}
+
+/* color */
+/* #FFBF00 #FFAC1C #CD7F32 #F28C28 #B87333 */
+
+.dot1 {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  background-color: #ffbf00;
+  display: inline-block;
+  z-index: 5;
+  position: absolute;
+  top: 10vw;
+  left: -3vw;
+  box-shadow: 1px 1px 1px black;
+}
+.dot2 {
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  background-color: #ffac1c;
+  display: inline-block;
+  z-index: 4;
+  position: absolute;
+  top: 8vw;
+  left: -3vw;
+  box-shadow: 1px 1px 1px black;
+}
+.dot3 {
+  width: 18vw;
+  height: 18vw;
+  border-radius: 50%;
+  background-color: #cd7f32;
+  display: inline-block;
+  z-index: 3;
+  position: absolute;
+  top: 6vw;
+  left: -3vw;
+  box-shadow: 1px 1px 1px black;
+}
+.dot4 {
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  background-color: #b87333;
+  display: inline-block;
+  z-index: 2;
+  position: absolute;
+  top: 5vw;
+  left: -4vw;
+  box-shadow: 1px 1px 1px black;
+}
+.dot5 {
+  width: 26vw;
+  height: 26vw;
+  border-radius: 50%;
+  background-color: #f28c28;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 4vw;
+  left: -4vw;
+  box-shadow: 1px 1px 1px black;
+}
+
+/*Fade left*/
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#fade-left {
+  opacity: 0;
+  animation: fade-left 1.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#fade-left:nth-child(3) {
+  animation: fade-left 1.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}

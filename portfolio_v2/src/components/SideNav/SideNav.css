@@ -1,0 +1,15 @@
+.nav {
+  writing-mode: vertical-rl;
+  transform: scale(-1);
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 2vw;
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #cc7722;
+  padding: 1vh;
+  border: 1px solid black;
+}
