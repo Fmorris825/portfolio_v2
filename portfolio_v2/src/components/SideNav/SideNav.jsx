@@ -3,9 +3,15 @@ import "./SideNav.css";
 const SideNav = () => {
   return (
     <div className="nav">
-      <a href="#Home">Home</a>
-      <a href="#Projects">Projects</a>
-      <a href="#Contact">Contact Fred</a>
+      <a href="#home" className="navLink">
+        HOME
+      </a>
+      <a href="#projects" className="navLink">
+        PROJECTS
+      </a>
+      <a href="#contact" className="navLink">
+        CONTACT
+      </a>
     </div>
   );
 };
